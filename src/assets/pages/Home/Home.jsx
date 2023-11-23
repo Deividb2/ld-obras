@@ -14,7 +14,7 @@ export default function Home() {
             <Banner />
             <Faixa />
             <Servicos />
-            {/* <Portifolio /> */}
+            <Portifolio />
             <Contato />
             <Rodape />
         </>
