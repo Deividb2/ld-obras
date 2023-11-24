@@ -6,6 +6,7 @@ export const Geral = styled.section `
     flex-direction: column;
     justify-content: center;
     padding: 0 1rem;
+    margin: 5rem 0;
     min-height: 100vh;
 `
 

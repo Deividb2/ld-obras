@@ -6,9 +6,9 @@ import { Titulo } from '../Servicos/Servicos.style'
 import { FaYoutube, FaInstagram, FaWhatsapp  } from "react-icons/fa6";
 
 export const Geral = styled.section `
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 3rem 0;
 
     @media (min-width: 768px) {
         flex-direction: row;

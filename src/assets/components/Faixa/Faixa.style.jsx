@@ -8,7 +8,6 @@ export const Geral = styled.section `
     text-align: center;
     width: 100%;
     min-height: 15vh;
-    margin-top: 2rem;
     padding: 1rem;
     background-color: ${cores.amarelo};
 

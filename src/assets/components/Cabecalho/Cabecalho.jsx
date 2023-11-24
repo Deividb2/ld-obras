@@ -29,7 +29,7 @@ export default function Cabecalho() {
                         <Menu>
                             <ItemMenu><LinkMenu to='/'>Home</LinkMenu></ItemMenu>
                             <ItemMenu><LinkMenu to='/servicos'>Serviços</LinkMenu></ItemMenu>
-                            {/* <ItemMenu><LinkMenu to='/projetos'>Projetos</LinkMenu></ItemMenu> */}
+                            <ItemMenu><LinkMenu to='/projetos'>Projetos</LinkMenu></ItemMenu>
                             <ItemMenu><LinkMenu to='/portifolio'>Portifólio</LinkMenu></ItemMenu>
                             <ItemMenu><LinkMenu to='/contato'>Contato</LinkMenu></ItemMenu>
                         </Menu>

@@ -2,21 +2,22 @@ import styled from 'styled-components'
 import { cores } from '../../../Global.style'
 
 export const BannerGeral = styled.section `
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 3rem .5rem 1rem .5rem; 
+    justify-content: center;
+    padding: 0 .5rem; 
 
     @media (min-width: 768px) {
         padding-left: 2rem; 
         justify-content: center;
-        height: 73vh;
+        padding-top: 7rem;
     }
 `
 
 export const Titulos = styled.div `
     display: flex;
     flex-direction: column;
-    /* max-width: 48rem; */
 
     span {
         font-size: 2rem;

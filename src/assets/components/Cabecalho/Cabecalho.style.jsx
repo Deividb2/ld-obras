@@ -14,6 +14,8 @@ import { FaWhatsapp } from "react-icons/fa";
 export const Header = styled.header `
     display: flex;
     flex-direction: column;
+    position: fixed;
+    inset: 0 0;
 `
 
 
@@ -72,15 +74,12 @@ export const SectionNav = styled.section `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 11.3vh;
+    /* height: 11.3vh; */
     padding: 0 2rem; 
     background-color: ${cores.amarelo};
 `
 
 export const Logo = styled.div `
-    /* font-size: 1.2rem;
-    color: ${cores.azul}; */
-
     background: url(${LogoImg}) no-repeat center / cover;
     height: 80px;
     width: 80px;
@@ -128,27 +127,22 @@ export const BoxBtnMenu = styled.div `
     }
 `
 
+
+// MENU MOBILE
+
 export const MenuBtnMobClose = styled(AiOutlineClose) ``
 export const MenuBtnMobOpen = styled(BiMenu) ``
 
 export const MenuMob = styled.ul `
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    list-style: none;
     gap: 1.5rem;
+    padding: 5rem 0;
+    list-style: none;
     background-color: ${cores.azul};
     transition: all .5s ease;
-    height: 50vh;
-    position: fixed;
-    top: 10.2rem;
-    left: 0;
-    right: 0;
-    
-    @media (min-width: 480px) {
-        top: 7.9rem;
-    }
 
     @media (min-width: 992px) {
         display: none;
