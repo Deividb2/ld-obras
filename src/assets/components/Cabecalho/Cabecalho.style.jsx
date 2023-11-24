@@ -15,7 +15,9 @@ export const Header = styled.header `
     display: flex;
     flex-direction: column;
     position: fixed;
-    inset: 0 0;
+    top: 0;
+    left: 0;
+    right: 0;
 `
 
 
