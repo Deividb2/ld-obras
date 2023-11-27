@@ -5,10 +5,10 @@ import { Titulo } from '../Servicos/Servicos.style'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 export const Geral = styled.section `
-    min-height: 100vh;
-    margin: 4rem 0;
     display: flex;
     flex-direction: column;
+    min-height: 80vh;
+    margin: 4rem 0;
 `
 
 export const TituloPort = styled(Titulo) ``
@@ -27,8 +27,8 @@ export const Projetos = styled.div `
 `
 
 export const SlideBox = styled(Swiper) `
-    width: 80vw;
-    height: 60vh;
+    width: 90vw;
+    height: 50vh;
     z-index: 1;
 
     @media (min-width: 768px) {

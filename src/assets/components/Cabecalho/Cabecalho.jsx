@@ -33,7 +33,7 @@ export default function Cabecalho() {
                             <ItemMenu><LinkMenu to='/portifolio'>Portifólio</LinkMenu></ItemMenu>
                             <ItemMenu><LinkMenu to='/contato'>Contato</LinkMenu></ItemMenu>
                         </Menu>
-                        <BoxBtnMenu onClick={() => menuToggle()}  menu={menu? 'aberto' : 'fechado'}>
+                        <BoxBtnMenu onClick={() => menuToggle()}>
                             {menu? <MenuBtnMobClose /> : <MenuBtnMobOpen />}
                         </BoxBtnMenu>
                     </Navegacao>

@@ -25,7 +25,7 @@ export const Contato = styled.section `
     gap: 1rem;
     padding: 1.5rem .3rem;
     background-color: ${cores.azul};
-    z-index: 2;
+    z-index: 3;
 
     @media (min-width: 480px) {
         flex-direction: row;
@@ -76,7 +76,7 @@ export const SectionNav = styled.section `
     align-items: center;
     padding: 0 2rem; 
     background-color: ${cores.amarelo};
-    z-index: 2;
+    z-index: 3;
 `
 
 export const Logo = styled.div `
@@ -122,20 +122,6 @@ export const BoxBtnMenu = styled.div `
     font-size: 2rem;
     color: ${cores.azul};
 
-    ${(props) => {
-        if(props.menu === 'aberto') {
-            return `
-                position: fixed;
-                right: 1rem;
-                top: 6rem;
-                background-color: ${cores.amarelo};
-                padding: 1rem;
-                border-radius: 15px;
-            `
-        }
-        }
-    }
-
     @media (min-width: 992px) {
         display: none;
     }
@@ -148,7 +134,6 @@ export const MenuBtnMobClose = styled(AiOutlineClose) ``
 export const MenuBtnMobOpen = styled(BiMenu) ``
 
 export const MenuMob = styled.ul `
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,6 +144,7 @@ export const MenuMob = styled.ul `
     position: fixed;
     right: 0;
     left: 0;
+    z-index: 2;
     transition: all .5s ease;
 
     @media (min-width: 992px) {
