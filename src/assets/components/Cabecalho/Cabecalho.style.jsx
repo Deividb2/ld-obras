@@ -14,10 +14,6 @@ import { FaWhatsapp } from "react-icons/fa";
 export const Header = styled.header `
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
 `
 
 
@@ -29,6 +25,7 @@ export const Contato = styled.section `
     gap: 1rem;
     padding: 1.5rem .3rem;
     background-color: ${cores.azul};
+    z-index: 2;
 
     @media (min-width: 480px) {
         flex-direction: row;
@@ -72,13 +69,14 @@ export const EmailText = styled.span `
     color: ${cores.amarelo};
 `
 
+// NAVEGAÇÃO
 export const SectionNav = styled.section `
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* height: 11.3vh; */
     padding: 0 2rem; 
     background-color: ${cores.amarelo};
+    z-index: 2;
 `
 
 export const Logo = styled.div `
@@ -124,6 +122,20 @@ export const BoxBtnMenu = styled.div `
     font-size: 2rem;
     color: ${cores.azul};
 
+    ${(props) => {
+        if(props.menu === 'aberto') {
+            return `
+                position: fixed;
+                right: 1rem;
+                top: 6rem;
+                background-color: ${cores.amarelo};
+                padding: 1rem;
+                border-radius: 15px;
+            `
+        }
+        }
+    }
+
     @media (min-width: 992px) {
         display: none;
     }
@@ -141,9 +153,12 @@ export const MenuMob = styled.ul `
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding: 5rem 0;
+    padding: 15rem 0;
     list-style: none;
     background-color: ${cores.azul};
+    position: fixed;
+    right: 0;
+    left: 0;
     transition: all .5s ease;
 
     @media (min-width: 992px) {
@@ -159,7 +174,7 @@ export const MenuMob = styled.ul `
             if(props.menu === 'aberto') {
                 return `transform: translateX(0)`
             } else {
-                return `transform: translateX(100%)`
+                return `transform: translateX(100%);`
             }
         }
     }
@@ -176,6 +191,7 @@ export const BtnWhats = styled(FaWhatsapp) `
     right: 1rem;
     cursor: pointer;
     animation: WhatsAnimate infinite alternate 1.5s;
+    z-index: 2;
 
     @media (min-width: 678px) {
         padding: .9rem;

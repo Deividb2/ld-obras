@@ -1,4 +1,4 @@
-import { Geral, TituloPort, Projetos, Fotos } from './Portifolio.style'
+import { Geral, TituloPort, Projetos, Fotos, SlideBox, Slide } from './Portifolio.style'
 
 import Acme from '../../../../public/images/acme.png'
 import Loja from '../../../../public/images/loja-ds.png'
@@ -18,6 +18,15 @@ export default function Portifolio() {
             <Projetos>
                 {fotos.map((elemento, chave) => <Fotos foto={elemento} key={chave}></Fotos>)}
             </Projetos>
+
+
+            <SlideBox slidesPerView={1} pagination={{clickable: true}} navigation autoplay>
+                {fotos.map((elemento, chave) => 
+                    <Slide>
+                        <Fotos foto={elemento} key={chave}></Fotos>
+                    </Slide>
+                )}
+            </SlideBox>
         </Geral>
     )
 }

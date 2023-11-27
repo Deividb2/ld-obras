@@ -11,7 +11,6 @@ export const BannerGeral = styled.section `
     @media (min-width: 768px) {
         padding-left: 2rem; 
         justify-content: center;
-        padding-top: 7rem;
     }
 `
 
