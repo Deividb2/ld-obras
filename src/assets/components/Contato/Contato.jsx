@@ -34,9 +34,9 @@ export default function Contato() {
             <div>
                 <TituloCont>Entrar em contato</TituloCont>
                 <InfosContato>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure nisi ipsum vitae, pariatur sit labore impedit harum voluptas consequuntur dolorum maxime iusto sint eveniet sed placeat nemo velit ab!</p>
+                    <p>Se você é do Rio de Janeiro e deseja rejuvenecer seu ambiente deixando seu lar mais agradável, está no lugar certo! Aqui na <strong>LD Obras</strong> você não somente tem um atendimento rápido mas também de qualidade.</p>
 
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque iure nisi ipsum vitae, pariatur sit labore impedit harum voluptas consequuntur dolorum maxime iusto sint eveniet sed placeat nemo velit ab!</p>
+                    <p>Entre em contato conosco e tire do papel aquela ideia que só a gente consegue realizar.</p>
 
                     <Redes>
                         <div><Youtube onClick={() => Redirecionar('youtube')} /></div>

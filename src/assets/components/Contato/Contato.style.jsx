@@ -28,6 +28,11 @@ export const InfosContato = styled.div `
 
     p {
         color: ${cores.cinza[100]};
+        line-height: 25px;
+
+        strong {
+            color: ${cores.azul};
+        }
     }
 
     @media (min-width: 768px) {
@@ -134,8 +139,8 @@ export const Box = styled.div `
 export const BtnEnviar = styled.input `
     background-color: ${cores.azul};
     color: ${cores.branco};
-    outline: none;
-    border: none;
+    outline: none !important;
+    border: none !important;
 
     @media (min-width: 768px) {
         border-radius: 15px;

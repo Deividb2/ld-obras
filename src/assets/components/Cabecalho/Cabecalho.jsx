@@ -15,7 +15,7 @@ export default function Cabecalho() {
                 <Contato>
                     <Whats onClick={() => Redirecionar('whats')}>
                         <WhatsIcon />
-                        <WhatsNumber>(21) 97720-1714</WhatsNumber>
+                        <WhatsNumber>(21) 99051-8769</WhatsNumber>
                     </Whats>
                     <Email onClick={() => Redirecionar('email')}>
                         <EmailIcon />

@@ -10,7 +10,7 @@ export default function Banner() {
             </Titulos>        
             <Descricao>
                 <p>
-                    Somos uma equipe de profissionais qualificados e capacitados em reformas, manutenções e reparos residências. Além de realizarmos reparos e pequenas reformas em apartamentos. 
+                    Somos uma equipe de profissionais qualificados e capacitados. Realizamos serviços de reformas, manutenções e reparos residenciais. Nosso trabalho preza pela organização, limpeza e, acima de tudo, a satisfação do cliente. 
                 </p>
             </Descricao>
             <BoxBtn>
