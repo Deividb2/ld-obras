@@ -134,6 +134,7 @@ export const MenuBtnMobClose = styled(AiOutlineClose) ``
 export const MenuBtnMobOpen = styled(BiMenu) ``
 
 export const MenuMob = styled.ul `
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

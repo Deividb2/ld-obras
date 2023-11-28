@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 import { cores } from '../../../Global.style'
+import Banner1 from '../../../../public/images/banner1.jpg'
+import Banner2 from '../../../../public/images/banner2.jpg'
+import Banner21 from '../../../../public/images/banner21.jpg'
+import Banner3 from '../../../../public/images/banner3.png'
 
 export const BannerGeral = styled.section `
     height: 100vh;
@@ -7,6 +11,7 @@ export const BannerGeral = styled.section `
     flex-direction: column;
     justify-content: center;
     padding: 0 .5rem; 
+    background: url(${Banner3}) no-repeat top / cover;
 
     @media (min-width: 768px) {
         padding-left: 2rem; 
@@ -22,6 +27,7 @@ export const Titulos = styled.div `
         font-size: 2rem;
         font-weight: 700;
         color: ${cores.azul};   
+        text-shadow: 2px 2px 15px ${cores.amarelo};
     }
 
     @media (min-width: 768px) {
@@ -38,7 +44,7 @@ export const Descricao = styled.div `
     p {
         line-height: 1.5rem;
         font-size: .9rem;
-        color: ${cores.preto};
+        color: ${cores.branco};
         font-weight: 300;
     }
 
