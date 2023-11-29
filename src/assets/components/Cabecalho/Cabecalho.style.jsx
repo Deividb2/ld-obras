@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import { Link } from 'react-router-dom'
 import { cores } from '../../../Global.style'
-import Logo2 from '../../../../public/images/logo.png'
 import LogoImg from '../../../../public/images/logo.png'
 
 // ÍCONES
@@ -84,6 +83,7 @@ export const Logo = styled.div `
     background: url(${LogoImg}) no-repeat center / cover;
     height: 70px;
     width: 70px;
+    margin: .5rem 0;
 `
 
 export const Navegacao = styled.nav ``

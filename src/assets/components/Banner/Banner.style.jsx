@@ -4,6 +4,10 @@ import Banner1 from '../../../../public/images/banner1.jpg'
 import Banner2 from '../../../../public/images/banner2.jpg'
 import Banner21 from '../../../../public/images/banner21.jpg'
 import Banner3 from '../../../../public/images/banner3.png'
+import Banner4 from '../../../../public/images/banner4.jpg'
+import Banner5 from '../../../../public/images/banner5.jpg'
+import Banner6 from '../../../../public/images/predio-home.jpg'
+
 
 export const BannerGeral = styled.section `
     height: 100vh;
@@ -11,7 +15,7 @@ export const BannerGeral = styled.section `
     flex-direction: column;
     justify-content: center;
     padding: 0 .5rem; 
-    background: url(${Banner3}) no-repeat top / cover;
+    background: url(${Banner6}) no-repeat top / cover;
 
     @media (min-width: 768px) {
         padding-left: 2rem; 
@@ -27,7 +31,7 @@ export const Titulos = styled.div `
         font-size: 2rem;
         font-weight: 700;
         color: ${cores.azul};   
-        text-shadow: 2px 2px 15px ${cores.amarelo};
+        text-shadow: 5px 5px 15px ${cores.branco};
     }
 
     @media (min-width: 768px) {
@@ -46,6 +50,7 @@ export const Descricao = styled.div `
         font-size: .9rem;
         color: ${cores.branco};
         font-weight: 300;
+        text-shadow: 5px 5px 15px ${cores.preto};
     }
 
     @media (min-width: 768px) {
@@ -66,7 +71,7 @@ export const BoxBtn = styled.div `
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    `
+`
 
 export const Btn = styled.a `
     text-decoration: none;
@@ -76,6 +81,7 @@ export const Btn = styled.a `
     padding: .6rem 1rem;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 2px 2px 35px ${cores.preto};
     transition: padding .5s ease;
 
     &:hover {

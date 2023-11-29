@@ -3,7 +3,7 @@ import { BannerGeral, Titulos, Descricao, BoxBtn, Btn } from './Banner.style'
 export default function Banner() {
     
     return (
-        <BannerGeral>
+        <BannerGeral>  
             <Titulos>
                 <span>Alvenaria e Reformas</span>
                 <span>Eleve o padrão da sua residência.</span>
