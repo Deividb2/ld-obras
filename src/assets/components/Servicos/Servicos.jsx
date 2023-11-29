@@ -16,10 +16,10 @@ const ServicosComponente = ({dados}) => {
     )
 }
 
-export default function Servicos() {
+export default function Servicos({ id }) {
 
     return (
-        <Geral>
+        <Geral id={id}>
             <Titulo>Serviços</Titulo>
             <ContainerServicos>
                 {servicosDados.map((elemento, index) => <ServicosComponente dados={elemento} key={index} />)}

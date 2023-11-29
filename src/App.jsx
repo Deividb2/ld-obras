@@ -6,6 +6,7 @@ import Servicos from './assets/pages/Servicos/Servicos'
 import Projetos from './assets/pages/Projetos/Projetos'
 import Portifolio from './assets/pages/Portifolio/Portifolio'
 import Contato from './assets/pages/Contato/Contato'
+import { useState } from 'react'
 
 export default function App() {
 

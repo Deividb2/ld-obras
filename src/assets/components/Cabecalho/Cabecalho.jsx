@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Header, Contato, Whats, WhatsIcon, WhatsNumber, Email, EmailIcon, EmailText, SectionNav, Logo, Navegacao, Menu, ItemMenu, LinkMenu, BoxBtnMenu, MenuBtnMobOpen, MenuBtnMobClose, MenuMob, BtnWhats } from './Cabecalho.style'
 import { Redirecionar } from '../../../App'
 
-export default function Cabecalho() {
+export default function Cabecalho({ hendleNavegation, id }) {
 
     const [menu, setMenu] = useState(false)
     const menuToggle = () => {
@@ -11,7 +11,7 @@ export default function Cabecalho() {
 
     return (
         <>
-            <Header>
+            <Header id={id} menu={menu? 'aberto' : 'fechado'}>
                 <Contato>
                     <Whats onClick={() => Redirecionar('whats')}>
                         <WhatsIcon />
@@ -27,11 +27,11 @@ export default function Cabecalho() {
                     <Logo></Logo>
                     <Navegacao>
                         <Menu>
-                            <ItemMenu><LinkMenu to='/'>Home</LinkMenu></ItemMenu>
-                            <ItemMenu><LinkMenu to='/servicos'>Serviços</LinkMenu></ItemMenu>
-                            <ItemMenu><LinkMenu to='/projetos'>Projetos</LinkMenu></ItemMenu>
-                            <ItemMenu><LinkMenu to='/portifolio'>Portifólio</LinkMenu></ItemMenu>
-                            <ItemMenu><LinkMenu to='/contato'>Contato</LinkMenu></ItemMenu>
+                            <ItemMenu><LinkMenu onClick={() => hendleNavegation('cabecalho')}>Home</LinkMenu></ItemMenu>
+                            <ItemMenu><LinkMenu onClick={() => hendleNavegation('servicos')}>Serviços</LinkMenu></ItemMenu>
+                            <ItemMenu><LinkMenu>Projetos</LinkMenu></ItemMenu>
+                            <ItemMenu><LinkMenu onClick={() => hendleNavegation('portifolio')}>Portifólio</LinkMenu></ItemMenu>
+                            <ItemMenu><LinkMenu onClick={() => hendleNavegation('contato')}>Contato</LinkMenu></ItemMenu>
                         </Menu>
                         <BoxBtnMenu onClick={() => menuToggle()}>
                             {menu? <MenuBtnMobClose /> : <MenuBtnMobOpen />}
@@ -40,11 +40,11 @@ export default function Cabecalho() {
                 </SectionNav>
 
                 <MenuMob menu={menu? 'aberto' : 'fechado'}>
-                    <ItemMenu><LinkMenu to='/'>Home</LinkMenu></ItemMenu>
-                    <ItemMenu><LinkMenu to='/servicos'>Serviços</LinkMenu></ItemMenu>
-                    <ItemMenu><LinkMenu to='/projetos'>Projetos</LinkMenu></ItemMenu>
-                    <ItemMenu><LinkMenu to='/portifolio'>Portifólio</LinkMenu></ItemMenu>
-                    <ItemMenu><LinkMenu to='/contato'>Contato</LinkMenu></ItemMenu>
+                    <ItemMenu><LinkMenu onClick={() => hendleNavegation('cabecalho')}>Home</LinkMenu></ItemMenu>
+                    <ItemMenu><LinkMenu onClick={() => hendleNavegation('servicos')}>Serviços</LinkMenu></ItemMenu>
+                    <ItemMenu><LinkMenu>Projetos</LinkMenu></ItemMenu>
+                    <ItemMenu><LinkMenu onClick={() => hendleNavegation('portifolio')}>Portifólio</LinkMenu></ItemMenu>
+                    <ItemMenu><LinkMenu onClick={() => hendleNavegation('contato')}>Contato</LinkMenu></ItemMenu>
                 </MenuMob>
             </Header>
             <BtnWhats onClick={() => Redirecionar('whats')} />

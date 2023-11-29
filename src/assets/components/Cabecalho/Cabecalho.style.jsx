@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import { cores } from '../../../Global.style'
 import LogoImg from '../../../../public/images/logo.png'
 
@@ -111,10 +111,11 @@ export const ItemMenu = styled.li `
     }
 `
 
-export const LinkMenu = styled(Link) `
+export const LinkMenu = styled.a `
     text-decoration: none;
     font-weight: 700;
     color: ${cores.azul};
+    cursor: pointer;
 `
 
 export const BoxBtnMenu = styled.div `
@@ -135,12 +136,12 @@ export const MenuBtnMobClose = styled(AiOutlineClose) ``
 export const MenuBtnMobOpen = styled(BiMenu) ``
 
 export const MenuMob = styled.ul `
-    height: 100%;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding: 15rem 0;
+    padding: 13rem 0;
     list-style: none;
     background-color: ${cores.azul};
     position: fixed;

@@ -8,12 +8,12 @@ import Carros from '../../../../public/images/carrosVintage.png'
 import Fitness from '../../../../public/images/fitnessGym.png'
 
 
-export default function Portifolio() {
+export default function Portifolio({ id }) {
 
     const fotos = [Acme, Loja, Cafeteria, Carpintaria, Carros, Fitness]
 
     return (
-        <Geral>
+        <Geral id={id}>
             <TituloPort>Portifólio</TituloPort>
             <Projetos>
                 {fotos.map((elemento, chave) => <Fotos foto={elemento} key={chave}></Fotos>)}

@@ -3,7 +3,7 @@ import { Geral, TituloCont, Formulario, Box, BtnEnviar, InfosContato, Redes, Wha
 import emailJs from '@emailjs/browser'
 import { Redirecionar } from '../../../App'
 
-export default function Contato() {
+export default function Contato({ id }) {
 
     const [nome, setNome] = useState('')
     const [email, setEmail] = useState('')
@@ -30,7 +30,7 @@ export default function Contato() {
     }
 
     return (
-        <Geral>
+        <Geral id={id}>
             <div>
                 <TituloCont>Entrar em contato</TituloCont>
                 <InfosContato>
