@@ -1,7 +1,7 @@
 import { Faq, TituloFaq, Box, BoxPergunta, BoxResposta, SetaUp, SetaDown, Chat } from './Perguntas.style'
 import { useState } from 'react'
 
-export default function Perguntas() {
+export default function Perguntas({ id }) {
 
     const [isOpen, setIsOpen] = useState(false)
     const toggle = () => {
@@ -9,7 +9,7 @@ export default function Perguntas() {
     }
 
     return (
-        <Faq>
+        <Faq id={id}>
             <TituloFaq>Perguntas Frequentes</TituloFaq>
             {dadosFaq.map((item, key) => (
                 <Box key={key}>

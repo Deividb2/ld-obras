@@ -23,7 +23,7 @@ export default function Home() {
             <Faixa />
             <Servicos id='servicos' currentSection={currentSection} />
             <Portifolio id='portifolio' currentSection={currentSection} />
-            <Perguntas />
+            <Perguntas id='faq' currentSection={currentSection} />
             <Contato id='contato' currentSection={currentSection} />
             <Rodape />
         </>

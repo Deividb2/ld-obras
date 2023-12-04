@@ -29,7 +29,7 @@ export default function Cabecalho({ hendleNavegation, id }) {
                         <Menu>
                             <ItemMenu><LinkMenu onClick={() => hendleNavegation('cabecalho')}>Home</LinkMenu></ItemMenu>
                             <ItemMenu><LinkMenu onClick={() => hendleNavegation('servicos')}>Serviços</LinkMenu></ItemMenu>
-                            <ItemMenu><LinkMenu>Projetos</LinkMenu></ItemMenu>
+                            <ItemMenu><LinkMenu onClick={() => hendleNavegation('faq')}>FAQs</LinkMenu></ItemMenu>
                             <ItemMenu><LinkMenu onClick={() => hendleNavegation('portifolio')}>Portifólio</LinkMenu></ItemMenu>
                             <ItemMenu><LinkMenu onClick={() => hendleNavegation('contato')}>Contato</LinkMenu></ItemMenu>
                         </Menu>
