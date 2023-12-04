@@ -42,7 +42,7 @@ export const BoxCard = styled.div `
     width: 90vw;
     max-width: 20rem;
     min-height: 30vh;
-
+    
     @media (min-width: 768px) {
         width: 325px;
     }

@@ -24,7 +24,11 @@ export const TituloCont = styled(Titulo) `
 
 export const InfosContato = styled.div `
     max-width: 30rem;
-    display: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
 
     p {
         color: ${cores.cinza[100]};
@@ -36,9 +40,6 @@ export const InfosContato = styled.div `
     }
 
     @media (min-width: 768px) {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
         font-size: 1.1rem;
     }
 `
@@ -46,19 +47,18 @@ export const InfosContato = styled.div `
 export const Redes = styled.div `
     display: flex;
     gap: 2rem;
-    font-size: 2rem;
     margin-top: 1rem;
-    color: ${cores.azul};   
+    color: ${cores.azul};
 
     div {
-        background-color: ${cores.preto};
-        color: ${cores.branco};
-        border-radius: 100%;
-        width: 2.5rem;
-        height: 2.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 100%;
+        background-color: ${cores.preto};
+        color: ${cores.branco};
         font-size: 1.5rem;
         transition: transform .5s ease;
         transition: color 1.5s ease;
