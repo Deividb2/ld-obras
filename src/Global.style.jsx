@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
-    // estilizando scroll
+    // scroll
     ::-webkit-scrollbar {
         width: 10px;
         background-color: #fff;
